@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #github-username-form {
+    margin: 20px auto;
+    width: 300px;
+    text-align: center;
+  }
+  
+  #username {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+  }
+  
+  #submit-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #24292e;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #loader {
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  #repositories-container {
+    display: none;
+    margin: 20px auto;
+    width: 600px;
+  }
+  
+  .repository {
+    margin: 10px 0;
+  }
+  
+  .repository a {
+    font-size: 18px;
+    color: #24292e;
+    text-decoration: none;
+  }
+  
+  #pagination {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .page-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #24292e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .page-button:disabled {
+    background-color: #ccc;
+    color: #555;
+    cursor: not-allowed;
+  }
+  .pagination-btn {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}

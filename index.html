@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Repositories Listing</title>
+    <link rel="stylesheet" href="style.css">
+  
+  </head>
+  <body>
+    <div id="form-container">
+      <form id="github-username-form">
+        <label for="username">Enter Github username:</label>
+        <input type="text" id="username" name="username">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    
+    <div id="loader" style="display:none">
+      <img src="loader.gif" alt="Loading...">
+    </div>
+    
+    <div id="repositories-container" style="display:none">
+      <table id="repositories-table">
+        <thead>
+          <tr>
+            <th>Repository Name</th>
+            <th>Description</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody id="repositories-list">
+        </tbody>
+      </table>
+      <div id="pagination-container">
+        <button id="prev-button" style="display:none">Previous</button>
+        <button id="next-button">Next</button>
+      </div>
+    </div>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
