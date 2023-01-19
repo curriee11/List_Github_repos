@@ -9,36 +9,18 @@
   
   </head>
   <body>
-    <div id="form-container">
-      <form id="github-username-form">
-        <label for="username">Enter Github username:</label>
-        <input type="text" id="username" name="username">
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-    
-    <div id="loader" style="display:none">
-      <img src="loader.gif" alt="Loading...">
-    </div>
-    
-    <div id="repositories-container" style="display:none">
-      <table id="repositories-table">
-        <thead>
-          <tr>
-            <th>Repository Name</th>
-            <th>Description</th>
-            <th>URL</th>
-          </tr>
-        </thead>
-        <tbody id="repositories-list">
-        </tbody>
-      </table>
-      <div id="pagination-container">
-        <button id="prev-button" style="display:none">Previous</button>
-        <button id="next-button">Next</button>
-      </div>
-    </div>
-    
+    <form id="github-username-form">
+      <input type="text" id="username" placeholder="Enter Github username">
+      <button type="submit">Search</button>
+  </form>
+  
+  <div id="loader" style="display: none;"></div>
+  
+  <div id="repositories-container" style="display: none;"></div>
+  
+  <button id="prev-button" style="display: none;">Previous</button>
+  <button id="next-button" style="display: none;">Next</button>
+  
     <script src="index.js"></script>
   </body>
 </html>
