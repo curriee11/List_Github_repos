@@ -8,14 +8,31 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <form id="github-form">
-      <label for="username">Github Username:</label>
-      <input type="text" id="username" name="username">
-      <button type="submit">Submit</button>
+    
+
+      <form id="github-form">
+        <label>Username: <input type="text" id="username"></label>
+        <button type="submit" onclick="formSubmit()">Submit</button>
     </form>
-    <div id="loader" style="display:none;">Loading...</div>
-    <div id="repo-list"></div>
-    <div id="pagination"></div>
+    
+  <div id="loader" style="display: none;">Loading...</div>
+  <div id="repo-list"></div>
+  <div id="pagination"></div>
+  <!-- making form disappear -->
+  <script>
+    function formSubmit() {
+        document.getElementById("github-form").style.display = "none";
+    }
+</script>
+    
+     <!-- jquery for above task -->
+     <!-- <script>
+      $(document).ready(function(){
+          $("#submit-btn").click(function(){
+              $("#github-form").hide();
+          });
+      });
+  </script> -->
     <script src="main.js"></script>
   </body>
 </html>
