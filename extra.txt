@@ -79,7 +79,49 @@ a {
     font-size: 2em;
     margin: 50px;
 }
-
+<div id="github-profile">
+      <form>
+        <label>Enter Github username:</label>
+        <input type="text" id="username" placeholder="Username">
+        <button type="submit" id="submit-btn">Submit</button>
+      </form>
+      <div id="profile-info"></div>
+      <div id="repositories"></div>
+      <!-- <div id="pagination"></div> -->
+      <div id="pagination">
+        <button type="button" id="prev-btn" disabled>Previous</button>
+        <button type="button" id="next-btn">Next</button>
+      </div>
+      
+    </div>
+    
+    <!-- <form id="github-username-form">
+      <input type="text" id="username" placeholder="Enter Github username">
+      <button type="submit">Search</button>
+  </form>
+  
+  <div id="loader" style="display: none;"></div>
+  
+  <div id="repositories-container" style="display: none;"></div>
+  
+  <button id="prev-button" style="display: none;">Previous</button>
+  <button id="next-button" style="display: none;">Next</button>
+  <div id="pagination-container" style="display: none;"></div> -->
+  <!-- <form id="github-username-form">
+    <label for="username">Enter Github username:</label>
+    <input type="text" id="username" name="username">
+    <button type="submit">Submit</button>
+</form>
+<div id="loader">Loading...</div>
+<div id="repositories-container"></div>
+<div id="pagination-container"></div>
+<div id="profile-container">
+  <img id="profile-picture" src="" alt="Profile picture">
+  <div id="profile-info">
+      <h2 id="profile-name"></h2>
+      <p id="profile-repos"></p>
+  </div>
+</div> -->
 // document.getElementById("github-form").addEventListener("submit", function(event) {
 //     event.preventDefault();
 //     var username = document.getElementById("username").value;
