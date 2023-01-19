@@ -6,18 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github Repositories Listing</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      @media only screen and (max-width: 600px) {
+        /* CSS styles for small screens go here */
+       
+          h3 {
+            font-size: 1.2rem;
+          }
+        
+        
+      }
+
+
+      
+      
+      
+    </style>
   </head>
   <body>
     
-
-      <form id="github-form">
+    <div class="container">
+      <form id="github-form" class="form">
         <label>Username: <input type="text" id="username"></label>
         <button type="submit" onclick="formSubmit()">Submit</button>
-    </form>
-    
+      </form>
+      <div id="repo-list" class="repo-list"></div>
+         
   <div id="loader" style="display: none;">Loading...</div>
-  <div id="repo-list"></div>
+  <!-- <div id="repo-list"></div> -->
   <div id="pagination"></div>
+    </div>
+    
+ 
   <!-- making form disappear -->
   <script>
     function formSubmit() {
