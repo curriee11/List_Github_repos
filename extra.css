@@ -1,0 +1,90 @@
+
+    #repo-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#repo-list div {
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 2px #ccc;
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+}
+
+#pagination button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 2px #ccc;
+}
+
+#pagination button.active {
+  background-color: #ccc;
+}
+
+#loader {
+  display: none;
+  text-align: center;
+  font-size: 2em;
+  margin: 50px;
+} 
+
+
+/* for github form html one */
+#github-form {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  
+  #github-form label {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    text-align: center; /* align the label in center */
+    font-family: 'Montserrat', sans-serif;  /* change font */
+    /* font-style: italic; change font-style */
+  }
+  
+  
+  #github-form input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    text-align: center; /* align the text in center */
+    font-family: 'Open Sans', sans-serif; /* change font */
+  }
+  
+  
+  
+  #github-form button[type="submit"] {
+    width: 100%;
+    background-color: #59636c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+  
+  #github-form button[type="submit"]:hover {
+    background-color: #94a2ad;
+    box-shadow: 0px 0px 10px #d3e4ef;
+  }
+   
+  
