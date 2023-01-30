@@ -8,10 +8,14 @@ let totalPages = 0;
 let totalRepos=0;
 let username = "";
 
-
+setTimeout(() => {
+    loader.style.display = 'none';
+  }, 2000); // 2 seconds
+  
 const handleFormSubmit = (event) => {
     event.preventDefault();
     username = document.getElementById('username').value;
+    currentPage = 1;
     loader.style.display = 'block';
     getRepositories(username, currentPage);
 }
@@ -21,6 +25,7 @@ const getRepositories = (username, page) => {
             'Accept': 'application/vnd.github+json'
         }
     })
+    
     .then(response => {
         if (!response.ok) {
             throw new Error(response.statusText);
@@ -38,6 +43,12 @@ const getRepositories = (username, page) => {
             .then(response => response.json())
             .then(data => {
                 totalRepos = data.public_repos;
+                // totalPages = Math.ceil(totalRepos/10);
+                totalPages = Math.ceil(totalRepos/10); // added this line
+                renderPagination(); 
+        
+                // document.querySelector('#pagination button').classList.add('active');
+
                 console.log(data.public_repos);
             });
         data.forEach(repo => {
@@ -58,8 +69,10 @@ const getRepositories = (username, page) => {
 // // shows 1 to 10 and next
                       const renderPagination = () => {
                         pagination.innerHTML = '';
-                        totalPages=totalRepos/10+1;
+                        // totalPages=totalRepos/10+1;
                         console.log(totalPages);
+                       
+
                         for (let i = 1; i <= totalPages; i++) {
                             const button = document.createElement('button');
                             button.innerText = i;
