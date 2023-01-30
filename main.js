@@ -90,7 +90,7 @@ const getRepositories = (username, page) => {
                         if (currentPage === totalPages) {
                             nextButton.disabled = true;
                         }
-
+                             nextButton.id="next";
                         nextButton.addEventListener('click', () => {
                             currentPage++;
                             if (currentPage <= totalPages) {

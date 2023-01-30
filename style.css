@@ -75,13 +75,18 @@ body {
     align-items: center;
     margin-top: 40px;
   }
-  
+
+  /* repoList div {
+    transition: all 0.5s ease;
+  }
+   */
   #repo-list div {
     margin-bottom: 20px;
     width: 80%;
     padding: 20px;
     background-color:#DFF0D8;
     border-radius: 5px;
+    
   }
   
   #repo-list h3 {
@@ -108,7 +113,20 @@ body {
     font-size: 16px;
     margin-right: 20px;
   }
-  
+  /* #pagination nextButton{
+    padding: 10px 20px;
+    background-color: #da4242;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+  } */
+  #next {
+    background-color: rgb(4, 33, 9)!important;
+ }
+ 
   #pagination button.active {
     background-color: #592941;
   }
@@ -160,4 +178,5 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+  
   
