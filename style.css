@@ -1,12 +1,26 @@
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #CAE2D6;
-    overflow-x: scroll;
+    overflow-x: scroll; */
+    /* background-image: url('green.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; */
+    background: url(green.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   
   }
+  
+
+
+  
+  
   
   #github-form {
     /* display: flex;
@@ -178,5 +192,6 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+  /* animation */
   
   
