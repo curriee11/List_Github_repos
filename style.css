@@ -10,11 +10,10 @@ body {
     background-repeat: no-repeat;
     background-position: center center; */
     background: url(green.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  
+    -webkit-background-size: cover;/*for safari*/
+    -moz-background-size: cover;/*for mozilla*/
+    -o-background-size: cover;/*for opera*/
+    background-size: cover;/*for chrome */ 
   }
   
 
@@ -171,6 +170,9 @@ body {
       padding: 8px 16px;
       font-size: 14px;
       margin-right: 10px;
+    }
+    body {
+      background-size: contain;
     }
   }  
   /* style loader */
