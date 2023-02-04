@@ -171,9 +171,11 @@ body {
       font-size: 14px;
       margin-right: 10px;
     }
-    body {
-      background-size: contain;
-    }
+    background: url(green.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;/*for safari*/
+    -moz-background-size: cover;/*for mozilla*/
+    -o-background-size: cover;/*for opera*/
+    background-size: cover;/*for chrome */ 
   }  
   /* style loader */
   #loader {
