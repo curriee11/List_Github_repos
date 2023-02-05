@@ -1,7 +1,9 @@
+
 const githubForm = document.getElementById('github-form');
 const repoList = document.getElementById('repo-list');
 const pagination = document.getElementById('pagination');
 const loader = document.getElementById('loader');
+const userNameDisplay = document.getElementById('userNameDisplay');
 
 let currentPage = 0;
 let totalPages = 0;
@@ -15,16 +17,20 @@ setTimeout(() => {
 const handleFormSubmit = (event) => {
     event.preventDefault();
     username = document.getElementById('username').value;
+    
     currentPage = 1;
     loader.style.display = 'block';
     getRepositories(username, currentPage);
 }
+ 
+  
 const getRepositories = (username, page) => {
     fetch(`https://api.github.com/users/${username}/repos?per_page=10&page=${page}`, {
         headers: {
             'Accept': 'application/vnd.github+json'
         }
     })
+
     
     .then(response => {
         if (!response.ok) {
@@ -46,7 +52,7 @@ const getRepositories = (username, page) => {
                 // totalPages = Math.ceil(totalRepos/10);
                 totalPages = Math.ceil(totalRepos/10); // added this line
                 renderPagination(); 
-        
+                userNameDisplay.innerHTML = `<h2>${data.name}</h2>`;
                 // document.querySelector('#pagination button').classList.add('active');
 
                 console.log(data.public_repos);
