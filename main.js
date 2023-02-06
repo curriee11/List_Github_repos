@@ -4,6 +4,7 @@ const repoList = document.getElementById('repo-list');
 const pagination = document.getElementById('pagination');
 const loader = document.getElementById('loader');
 const userNameDisplay = document.getElementById('userNameDisplay');
+const image = document.getElementById('image');
 
 let currentPage = 0;
 let totalPages = 0;
@@ -53,6 +54,7 @@ const getRepositories = (username, page) => {
                 totalPages = Math.ceil(totalRepos/10); // added this line
                 renderPagination(); 
                 userNameDisplay.innerHTML = `<h2>${data.name}</h2>`;
+                image.innerHTML=`<img src="${data.avatar_url}" style="display: block; margin: 0 auto; border-radius: 50%; width: 100px; height: 100px;">`;
                 // document.querySelector('#pagination button').classList.add('active');
 
                 console.log(data.public_repos);
