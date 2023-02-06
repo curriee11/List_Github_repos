@@ -53,8 +53,10 @@ const getRepositories = (username, page) => {
                 // totalPages = Math.ceil(totalRepos/10);
                 totalPages = Math.ceil(totalRepos/10); // added this line
                 renderPagination(); 
-                userNameDisplay.innerHTML = `<h2>${data.name}</h2>`;
-                image.innerHTML=`<img src="${data.avatar_url}" style="display: block; margin: 0 auto; border-radius: 50%; width: 100px; height: 100px;">`;
+                // userNameDisplay.innerHTML = `<h2>${data.name}</h2>`;
+                // image.innerHTML=`<img src="${data.avatar_url}" style="display: block; margin: 0 auto; border-radius: 50%; width: 100px; height: 100px;">`;
+                userNameDisplay.innerHTML=` <img src="${data.avatar_url}" alt="Profile Picture">
+                <h2>${data.name}</h2>`;
                 // document.querySelector('#pagination button').classList.add('active');
 
                 console.log(data.public_repos);

@@ -203,6 +203,29 @@ body {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+#userNameDisplay img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  /* margin-left: 190px; */
+  margin-right: 20px;
+}
+
+#userNameDisplay h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  color: #1B3731;
+  font-family: 'Libre Baskerville', serif;
+  /* font-style: bold; */
+  /* justify-content: center; */
 }
 
   
