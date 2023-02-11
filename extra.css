@@ -87,4 +87,46 @@
     box-shadow: 0px 0px 10px #d3e4ef;
   }
    
+  /* new */
+   /* #userNameDisplay {
+    /* text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 32px; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    margin-top: 30px;
+  }
+  #userNameDisplay img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    /* margin-left: 50px; */
+    margin-right: 20px;
+  }
+  @media only screen and (max-width: 600px) {
+    #userNameDisplay img {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+    }
   
+  #userNameDisplay h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    /* margin-bottom: 20px; */
+    color: #1B3731;
+    font-family: 'Libre Baskerville', serif;
+    /* font-style: bold; */
+    /* justify-content: center; */
+  }
+  
+  #userNameDisplay h5 {
+    margin: 0;
+    /* text-align: left; */
+  }

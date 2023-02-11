@@ -198,34 +198,192 @@ body {
   }
   /* animation */
   /* user name */
-  #userNameDisplay {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 32px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-}
-#userNameDisplay img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  /* margin-left: 190px; */
-  margin-right: 20px;
-}
-
-#userNameDisplay h2 {
-  font-size: 22px;
-  font-weight: bold;
-  text-align: center;
-  margin: 10px 0;
-  color: #1B3731;
-  font-family: 'Libre Baskerville', serif;
-  /* font-style: bold; */
-  /* justify-content: center; */
-}
-
+  /* #userNameDisplay {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+    margin-top: 30px;
+  }
   
+  #userNameDisplay img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #userNameDisplay img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  #userNameDisplay h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    color: #1B3731;
+    font-family: 'Libre Baskerville', serif;
+  }
+  
+  #userNameDisplay h5 {
+    margin: 0;
+    text-align: center;
+  }
+   */
+/* 2nd attempt */
+   /* #userNameDisplay {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    }
+    #userNameDisplay img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    }
+    #userNameDisplay h2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    color: #1B3731;
+    font-family: 'Libre Baskerville', serif;
+    }
+    #userNameDisplay h5 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    margin: 0;
+    text-align: center;
+    }
+    
+    @media only screen and (max-width: 600px) {
+    #userNameDisplay img {
+    width: 80px;
+    height: 80px;
+    }
+    } */
+    /* 3rd attempt */
+    /* #userNameDisplay {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "img name" "img twitter";
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    
+    #userNameDisplay img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      grid-area: img;
+      
+    }
+    
+    #userNameDisplay h2 {
+      font-size: 22px;
+      font-weight: bold;
+      grid-area: name;
+      color: #1B3731;
+      font-family: 'Libre Baskerville', serif;
+      margin-bottom: 0;
+    }
+    
+    #userNameDisplay h5 {
+      grid-area: twitter;
+      text-align: left;
+      margin-bottom: 0;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      #userNameDisplay img {
+        width: 80px;
+        height: 80px;
+      }
+    } */
+    /* 4th attempt */
+    #userNameDisplay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+    
+    .user-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-column-gap: 20px;
+      align-items: center;
+    }
+     
+     .user-grid img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+    } 
+    
+    @media only screen and (max-width: 600px) {
+      .user-grid img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    
+    #userNameDisplay h2 {
+      font-size: 22px;
+      font-weight: bold;
+      text-align: left;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      color: #1B3731;
+      font-family: 'Libre Baskerville', serif;
+    }
+    
+    #userNameDisplay h5 {
+      /* margin-top: 10px; */
+margin: 0;
+      text-align: left;
+      font-size: 14px;
+    }
+    #userNameDisplay .bio {
+      max-width: 300px;
+      word-wrap: break-word;
+      margin-bottom: 5px;
+      margin-top: 10px;
+      color: #19362a;
+    }
+    /* for twiiter */
+    #userNameDisplay a {
+      color: #0e4d12;
+      font-weight: bold;
+      /* margin-top: 20px; */
+      /* text-decoration: none; */
+    }
+    .location{
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      justify-content: flex-start;
+      color:#200f17
+    }    
+    .location i{
+      margin-right: 3px;
+      /* color:#592941 */
+    }
+    
+    .twitter{
+      margin-top: 10px!important;
+    }
+    
