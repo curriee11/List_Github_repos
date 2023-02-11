@@ -139,6 +139,9 @@ body {
   #next {
     background-color: rgb(4, 33, 9)!important;
  }
+ #next:hover{
+  background-color: #ad1d59!important;
+ }
  
   #pagination button.active {
     background-color: #592941;

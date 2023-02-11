@@ -104,15 +104,23 @@ const getRepositories = (username, page) => {
                         }
                         const nextButton = document.createElement('button');
                         nextButton.innerText = 'Next';
-                        if (currentPage === totalPages) {
-                            nextButton.disabled = true;
-                        }
+                        // if (currentPage === totalPages) {
+                        //     nextButton.disabled = true;
+                        //     // currentPage = 0;
+                        // }
+                        // added id to make css changes
                              nextButton.id="next";
                         nextButton.addEventListener('click', () => {
                             currentPage++;
-                            if (currentPage <= totalPages) {
+                            // if (currentPage <= totalPages) {
+                            //     getRepositories(username, currentPage);
+                            // }
+                            if (currentPage > totalPages) {
+                                    // nextButton.disabled = true;
+                                    currentPage = 1;
+                                    
+                                }
                                 getRepositories(username, currentPage);
-                            }
                         });
                         pagination.appendChild(nextButton);
                     }
