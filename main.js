@@ -4,7 +4,7 @@ const repoList = document.getElementById('repo-list');
 const pagination = document.getElementById('pagination');
 const loader = document.getElementById('loader');
 const userNameDisplay = document.getElementById('userNameDisplay');
-const bio = document.getElementById('bio');
+// const bio = document.getElementById('bio');
 
 let currentPage = 0;
 let totalPages = 0;
@@ -56,13 +56,22 @@ const getRepositories = (username, page) => {
                 // userNameDisplay.innerHTML = `<h2>${data.name}</h2>`;
                 // image.innerHTML=`<img src="${data.avatar_url}" style="display: block; margin: 0 auto; border-radius: 50%; width: 100px; height: 100px;">`;
                 userNameDisplay.innerHTML=` <div class="user-grid"><img src="${data.avatar_url}" alt="Profile Picture">
+                
                 <div>
                 <h2>${data.name}</h2>
                 ${data.bio ? `<h5 class="bio"> ${data.bio}</h5>` : ''}
                 ${data.location ? `<div class="location"><i class="bi bi-geo-alt"></i><h5 class="location"> ${data.location}</h5></div>` : ''}
                 <h5 class="twitter">Twitter: <a href="https://twitter.com/${data.twitter_username}" target="_blank">${data.twitter_username}</a></h5>
-              </div></div>
-               `;
+               
+                </div>
+
+                <div>
+                <h5 class="github"><a href="${data.html_url}" target="_blank"><i class="bi bi-link"></i>  Github</a></h5>
+                 
+              
+              </div>
+              </div>
+                       `;
             
                 // document.querySelector('#pagination button').classList.add('active');
 
@@ -70,7 +79,8 @@ const getRepositories = (username, page) => {
             });
         data.forEach(repo => {
             const repoEl = document.createElement('div');
-            repoEl.innerHTML = `<h3><a href="${repo.html_url}">${repo.name}</a></h3><p>${repo.description}</p>`;
+            repoEl.innerHTML = `<h3><a href="${repo.html_url}">${repo.name}</a></h3>
+             ${repo.description ? `<p>${repo.description}</p>` : ''}`;
             repoList.appendChild(repoEl);
         });
         renderPagination();
