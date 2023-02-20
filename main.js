@@ -4,7 +4,7 @@ const repoList = document.getElementById('repo-list');
 const pagination = document.getElementById('pagination');
 const loader = document.getElementById('loader');
 const userNameDisplay = document.getElementById('userNameDisplay');
-// const bio = document.getElementById('bio');
+
 
 let currentPage = 0;
 let totalPages = 0;
