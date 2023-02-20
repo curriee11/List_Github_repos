@@ -3,17 +3,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #CAE2D6;
+   
     overflow-x: scroll; */
     /* background-image: url('green.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; */
-    background: url(green.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;/*for safari*/
+    /* img fixed */
+    /* background: url(green.jpg) no-repeat center center fixed; */
+     background: linear-gradient(to right,#CBEAA6,#97c775,#b2d2bf);
+    /* -webkit-background-size: cover;/*for safari*/
     -moz-background-size: cover;/*for mozilla*/
     -o-background-size: cover;/*for opera*/
-    background-size: cover;/*for chrome */ 
+    background-size: cover;/*for chrome */  */
   }
   
 
@@ -97,7 +99,8 @@ body {
     margin-bottom: 20px;
     width: 80%;
     padding: 20px;
-    background-color:#DFF0D8;
+    /* background-color:#DFF0D8; */
+    background: linear-gradient(to right, #b1e3c1, #c8e3bc,#afe0df);
     border-radius: 5px;
     
   }
