@@ -87,7 +87,13 @@ const getRepositories = (username, page) => {
         loader.style.display = 'none'; // hide the loading button
     })
     .catch(error => {
-        console.log(error);
+    //     loader.style.display = 'none'; // hide the loading button
+    //   repoList.innerHTML = ""; // clear the repo list
+    //   totalPages = 0; // reset the total pages
+    //     console.log(error);
+        alert('Invalid username. Please try again.');
+        loader.style.display = 'none';
+        location.reload();
     });
 }
 
