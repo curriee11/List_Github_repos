@@ -1,289 +1,289 @@
 body {
-    /* font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-    overflow-x: scroll; */
-    /* background-image: url('green.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; */
-    /* img fixed */
-    /* background: url(green.jpg) no-repeat center center fixed; */
-     background: linear-gradient(to right,#CBEAA6,#97c775,#b2d2bf);
-    /* -webkit-background-size: cover;/*for safari*/
-    -moz-background-size: cover;/*for mozilla*/
-    -o-background-size: cover;/*for opera*/
-    background-size: cover;/*for chrome */  */
-  }
-  
-
-
-  
-  
-  
-  #github-form {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px; */
-    /* #github-form { */
-      width: 300px;
-      margin: 0 auto;
-    /* } */
-    
-  }
+  /* font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
  
-  
-    
-  #github-form label {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-right: 10px;
-    /* font-size: 20px; */
-    color: #333;
-    /* font-weight: bold; */
-    margin-bottom: 5px;
-    display: block;
-    text-align: center; /* align the label in center */
-    font-family: 'Montserrat', sans-serif;  /* change font */
-    /* font-style: italic; change font-style */
-  }
-  
-  
-  #github-form input[type="text"] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    text-align: center; /* align the text in center */
-    font-family: 'Open Sans', sans-serif; /* change font */
-  }
-  
-  
-  
-  #github-form button[type="submit"] {
-    width: 100%;
-    background-color: #59636c;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: bold;
-  }
-  
-  #github-form button[type="submit"]:hover {
-    background-color: #94a2ad;
-    box-shadow: 0px 0px 10px #d3e4ef;
-  }
-   
-  
-  #repo-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
-  }
+  overflow-x: scroll; */
+  /* background-image: url('green.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; */
+  /* img fixed */
+  /* background: url(green.jpg) no-repeat center center fixed; */
+   background: linear-gradient(to right,#CBEAA6,#97c775,#b2d2bf);
+  /* -webkit-background-size: cover;/*for safari*/
+  -moz-background-size: cover;/*for mozilla*/
+  -o-background-size: cover;/*for opera*/
+  background-size: cover;/*for chrome */  */
+}
 
-  /* repoList div {
-    transition: all 0.5s ease;
-  }
-   */
-  #repo-list div {
-    margin-bottom: 20px;
-    width: 80%;
-    padding: 20px;
-    /* background-color:#DFF0D8; */
-    background: linear-gradient(to right, #b1e3c1, #c8e3bc,#afe0df);
-    border-radius: 5px;
-    
-  }
+
+
+
+
+
+#github-form {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px; */
+  /* #github-form { */
+    width: 300px;
+    margin: 0 auto;
+  /* } */
   
-  #repo-list h3 {
-    margin: 0;
-  }
+}
+
+
   
-  #repo-list a {
-    color: rgb(191,34,86);
-  }
+#github-form label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 10px;
+  /* font-size: 20px; */
+  color: #333;
+  /* font-weight: bold; */
+  margin-bottom: 5px;
+  display: block;
+  text-align: center; /* align the label in center */
+  font-family: 'Montserrat', sans-serif;  /* change font */
+  /* font-style: italic; change font-style */
+}
+
+
+#github-form input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  text-align: center; /* align the text in center */
+  font-family: 'Open Sans', sans-serif; /* change font */
+}
+
+
+
+#github-form button[type="submit"] {
+  width: 100%;
+  background-color: #59636c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+#github-form button[type="submit"]:hover {
+  background-color: #94a2ad;
+  box-shadow: 0px 0px 10px #d3e4ef;
+}
+ 
+
+#repo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* repoList div {
+  transition: all 0.5s ease;
+}
+ */
+#repo-list div {
+  margin-bottom: 20px;
+  width: 80%;
+  padding: 20px;
+  /* background-color:#DFF0D8; */
+  background: linear-gradient(to right,#F3F7F3 ,#FAFCED, #D8E9E6);
+  border-radius: 5px;
   
-  #pagination {
+}
+
+#repo-list h3 {
+  margin: 0;
+}
+
+#repo-list a {
+  color: rgb(191,34,86);
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#pagination button {
+  padding: 10px 20px;
+  background-color: #3C6851;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 20px;
+}
+/* #pagination nextButton{
+  padding: 10px 20px;
+  background-color: #da4242;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 20px;
+} */
+#next {
+  background-color: rgb(4, 33, 9)!important;
+}
+#next:hover{
+background-color: #ad1d59!important;
+}
+
+#pagination button.active {
+  background-color: #592941;
+}
+
+#loader {
+  display: none;
+  margin-top: 40px;
+}
+
+
+@media only screen and (max-width: 480px) {
+  /* styles for phone screen */
+  body {
+    font-size: 16px;
+  }
+  #github-form label {
+    font-size: 16px;
+  }
+  #github-form input[type="text"] {
+    font-size: 14px;
+  }
+  #github-form button[type="submit"] {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  #pagination button {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  background: url(green.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;/*for safari*/
+  -moz-background-size: cover;/*for mozilla*/
+  -o-background-size: cover;/*for opera*/
+  background-size: cover;/*for chrome */ 
+}  
+/* style loader */
+#loader {
+  display: none; /* hide the loader by default */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+  /* 4th attempt */
+  #userNameDisplay {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    align-items: center;
+    margin-top: 30px;
   }
   
-  #pagination button {
-    padding: 10px 20px;
-    background-color: #3C6851;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 20px;
+  .user-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 20px;
+    align-items: center;
   }
-  /* #pagination nextButton{
-    padding: 10px 20px;
-    background-color: #da4242;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 20px;
-  } */
-  #next {
-    background-color: rgb(4, 33, 9)!important;
- }
- #next:hover{
-  background-color: #ad1d59!important;
- }
- 
-  #pagination button.active {
-    background-color: #592941;
+   
+   .user-grid img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  } 
+  
+  @media only screen and (max-width: 600px) {
+    .user-grid img {
+      width: 80px;
+      height: 80px;
+    }
   }
   
-  #loader {
-    display: none;
-    margin-top: 40px;
-  }
-
-
-  @media only screen and (max-width: 480px) {
-    /* styles for phone screen */
-    body {
-      font-size: 16px;
-    }
-    #github-form label {
-      font-size: 16px;
-    }
-    #github-form input[type="text"] {
-      font-size: 14px;
-    }
-    #github-form button[type="submit"] {
-      font-size: 14px;
-    }
-  }
-  @media (max-width: 767px) {
-    #pagination button {
-      padding: 8px 16px;
-      font-size: 14px;
-      margin-right: 10px;
-    }
-    background: url(green.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;/*for safari*/
-    -moz-background-size: cover;/*for mozilla*/
-    -o-background-size: cover;/*for opera*/
-    background-size: cover;/*for chrome */ 
-  }  
-  /* style loader */
-  #loader {
-    display: none; /* hide the loader by default */
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 50px;
-    height: 50px;
-    border: 5px solid #f3f3f3;
-    border-top: 5px solid #3498db;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+  #userNameDisplay h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #1B3731;
+    font-family: 'Libre Baskerville', serif;
   }
   
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-    /* 4th attempt */
-    #userNameDisplay {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 30px;
-    }
-    
-    .user-grid {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      grid-column-gap: 20px;
-      align-items: center;
-    }
-     
-     .user-grid img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50px;
-    } 
-    
-    @media only screen and (max-width: 600px) {
-      .user-grid img {
-        width: 80px;
-        height: 80px;
-      }
-    }
-    
-    #userNameDisplay h2 {
-      font-size: 22px;
-      font-weight: bold;
-      text-align: left;
-      margin-top: 10px;
-      margin-bottom: 5px;
-      color: #1B3731;
-      font-family: 'Libre Baskerville', serif;
-    }
-    
-    #userNameDisplay h5 {
-      /* margin-top: 10px; */
+  #userNameDisplay h5 {
+    /* margin-top: 10px; */
 margin: 0;
-      text-align: left;
-      font-size: 14px;
-    }
-    #userNameDisplay .bio {
-      max-width: 300px;
-      word-wrap: break-word;
-      margin-bottom: 5px;
-      margin-top: 10px;
-      color: #19362a;
-    }
-    /* for twiiter */
-    #userNameDisplay a {
-      color: #0e4d12;
-      font-weight: bold;
-      /* margin-top: 20px; */
-      /* text-decoration: none; */
-    }
-    #userNameDisplay .github {
-      margin-top: 10px;
-      text-align: center;
-    }
-    .location{
-      display: flex;
-      align-items: center;
-      margin-top: 10px;
-      justify-content: flex-start;
-      color:#200f17
-    }    
-    .location i{
-      margin-right: 3px;
-      /* color:#592941 */
-    }
-    .github i{
-      margin-right: 3px;
-    }
-    .github a{
-      text-decoration: none;
-    }
-    
-    .twitter{
-      margin-top: 10px!important;
-    }
-    
+    text-align: left;
+    font-size: 14px;
+  }
+  #userNameDisplay .bio {
+    max-width: 300px;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: #19362a;
+  }
+  /* for twiiter */
+  #userNameDisplay a {
+    color: #0e4d12;
+    font-weight: bold;
+    /* margin-top: 20px; */
+    /* text-decoration: none; */
+  }
+  #userNameDisplay .github {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .location{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: flex-start;
+    color:#200f17
+  }    
+  .location i{
+    margin-right: 3px;
+    /* color:#592941 */
+  }
+  .github i{
+    margin-right: 3px;
+  }
+  .github a{
+    text-decoration: none;
+  }
+  
+  .twitter{
+    margin-top: 10px!important;
+  }
+  
